@@ -15,7 +15,7 @@ const c = 10; // declaration and initialization of variable at the same time, it
 //let is used to declare the variable in javascript, it is a block scope variable, its value can be changed at any time,
 //it cannot be redeclared but can be reinitialized at any time, it is block scoped variable.
 
-//const is used to declare the variable in javascript, it is a block scope variable, its value cannot be changed at any time,
+//const is used to declare the vgit ariable in javascript, it is a block scope variable, its value cannot be changed at any time,
 //it cannot be redeclared and reinitialized at any time, it is block scoped variable.
 
 //Data types: it is a classification of data which is used to store the data in it,

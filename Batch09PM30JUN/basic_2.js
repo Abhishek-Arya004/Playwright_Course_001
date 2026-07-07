@@ -27,12 +27,12 @@
 //block of code
 //}while(condition);
 
-let j = 1;
+// let j = 1;
 
-do {
-  console.log(j);
-  j++;
-} while (j <= 10);
+// do {
+//   console.log(j);
+//   j++;
+// } while (j <= 10);
 
 //while loop syntax:
 
@@ -47,3 +47,57 @@ do {
 //   console.log(i);
 //   i++;
 // }
+
+//index            0       1        2         3         4
+const fruits = ["apple", "banana", "mango", "grapes", "orange"];
+console.log(fruits[0]);
+
+//for in loop: it is used to iterate over the properties of an object.
+//for of loop: it is used to iterate over the values of an iterable object.
+
+for (let x in fruits) {
+  console.log(fruits[x]);
+}
+
+for (let y of fruits) {
+  console.log(y);
+}
+
+/*
+
+******
+******
+******
+****** 
+
+*/
+
+for (let i = 1; i <= 4; i++) {
+  let str = "";
+  console.log(str);
+
+  for (let j = 1; j <= 6; j++) {
+    str += "  *"; // str = str + "  *";
+  }
+  console.log(str);
+}
+
+/*
+*
+**
+***
+****
+*****
+
+
+*/
+
+/*
+
+*****
+****
+***
+**
+*
+
+*/
