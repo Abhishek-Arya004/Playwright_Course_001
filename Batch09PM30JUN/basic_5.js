@@ -242,3 +242,4 @@ if (true) {
 
 //var------funtion scoped  but not a blocked scoped
 console.log(l);
+//difference between == and
