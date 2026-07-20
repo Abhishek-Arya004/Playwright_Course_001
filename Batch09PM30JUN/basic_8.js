@@ -22,7 +22,6 @@ let chr = "a";
 let company = `openAi`;
 
 let str1 = "Hello";
-
 let str2 = "word";
 
 let str3 = `javascript`;
@@ -87,3 +86,50 @@ let first = "this is ";
 let second = "World";
 
 console.log(first.concat(second));
+
+//Template Litrals
+
+let name1 = "";
+console.log("Hello " + name1);
+
+console.log(`Hello ${name1}`);
+
+//repeat()
+
+console.log("hi ".repeat(3));
+
+let id = "7";
+
+console.log(id.padStart(4, 0));
+
+console.log(id.padEnd(4, "0"));
+
+//match()
+
+let email = "abc@gmail.com";
+
+console.log(email.match(/@gmail/));
+
+//search();
+
+let text1 = "hello javascript";
+
+console.log(text1.search("arya"));
+
+// ecape characters
+
+let quote = 'He said  "Hello" ';
+
+console.log(quote);
+
+console.log("Hello \nword"); // from new line
+
+console.log("Hello \tWord ");
+
+let str4 = "Playwright"; // reverse ---?
+
+let str6 = str4.split("").reverse().join("");
+
+console.log(str4.reverse());
+
+// difference between slice and splice
