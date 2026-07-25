@@ -136,3 +136,118 @@ console.log(Object.keys(person4));
 console.log(Object.values(person4));
 
 console.log(Object.entries(person4));
+
+//object comparison
+
+const a = { name: "john" }; // a = Id , b = Id ---> reference variable --->uqiue
+
+const b = { name: "john" };
+
+console.log(a == b);
+console.log(a === b);
+
+//
+
+const obj1 = { name: "john" };
+
+const obj2 = obj1;
+
+console.log(obj1 == obj2); //true
+
+const arr1 = [1, 2, 3];
+const arr2 = [1, 2, 3];
+
+console.log(arr1 == arr2);
+
+console.log(a.name == b.name);
+
+const a1 = { num: 10 };
+const b1 = a1;
+const c1 = { num: 10 };
+
+console.log(a1 === b1); //false. | true
+console.log(a1 === c1); //false. | false
+console.log(b1 === c1); //false. |. false
+
+//Json ----> Javascritp--object----->json
+
+//js object
+
+const emp = {
+  id: 101,
+  name: "Arya",
+};
+
+//convert js object into json object
+
+const json = JSON.stringify(emp);
+
+//convert back to json to js object
+
+const jsobject = JSON.parse(json);
+
+//Json response
+
+// {
+
+// "id" : "1243";
+// "name" : "laptop";
+
+// }
+
+//Can we pass object in method?
+
+function add(a) {
+  console.log(a);
+}
+
+add(emp);
+
+// bracket notation and what is dot notation
+
+const person5 = {
+  name: "Abhishek",
+  age: "36",
+  city: "Noida",
+};
+
+person5.value = "Test";
+
+console.log(person5.value); // dot notaion
+console.log(person5["value"]); // bracket notation
+
+let key = "name";
+
+console.log(person5[key]); // value // dynamic property access
+
+console.log(person5.key); // undefine
+
+// spaces in Property name
+
+const accounts = {
+  "first name": "Abhishek",
+  "last name": "Arya",
+};
+
+console.log(accounts["first name"]);
+
+const object = {};
+
+object["Name"] = "Abhishek";
+object["city"] = "NOida";
+
+console.log(object);
+
+object["Name"] = "Pooja";
+
+console.log(object);
+
+delete object["Name"];
+
+const calculor = {
+  add(a, b) {
+    return a + b;
+  },
+};
+
+console.log(calculor["add"](20, 10));
