@@ -133,3 +133,7 @@ let str6 = str4.split("").reverse().join("");
 console.log(str4.reverse());
 
 // difference between slice and splice
+//slice - copy fron origian array
+//Splice - cut from original arrya
+
+

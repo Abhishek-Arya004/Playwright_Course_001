@@ -20,7 +20,7 @@ x[1] = "pineapple"; // length = 6, replace banana with pineapple
 
 //index    0       1        2         3         4
 
-console.log(x[0]); // apple
+console.log(x[0]); // applegi
 console.log(x[1]); // pineapple
 console.log(x[2]); // mango
 console.log(x[3]); // grapes
