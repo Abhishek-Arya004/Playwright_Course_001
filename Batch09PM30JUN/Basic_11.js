@@ -28,7 +28,7 @@ class User {
     this.age = age;
   }
 
-  //constructor() {}
+  //constructor(){}
 
   greet() {
     console.log("Hello" + " " + this.name + " " + this.age);
@@ -46,28 +46,29 @@ class User {
 // user1.greet();
 // user2.greet();
 
-const test1 = new User();
+//const test1 = new User();
 
-const test2 = new User("Arya", 32);
+//const test2 = new User("Arya", 32);
 
-const test3 = new User("shan", 36);
+//const test3 = new User("shan", 36);
 
-test1.display();
+//test1.display();
 
-test2.greet();
+//test2.greet();
 
-console.log(test2.age + " " + test2.name);
+//console.log(test2.age + " " + test2.name);
 
-test3.greet();
+//test3.greet();
 
 // constructore is called when class object is created
 // this is used to construct the object
 //this----refer to current class object / current object
-test1.display(); //this.display();
+//test1.display(); //this.display();
 
 class employee extends User {
   constructor(name, age) {
     super(name, age);
+
     //this.name = name;
   }
 
@@ -76,17 +77,24 @@ class employee extends User {
   }
 }
 
-const emp = new employee("Arya", 32);
+const emp = new employee("Arya1", 38);
 
 // const emp = {
 //name: "Shanaya";}
 
 emp.work();
 
-console.log(emp.name);
-emp.display();
+//console.log(emp.name);
+//emp.display();
 emp.greet();
 
 //console.log(emp.age);
 
 //inheritance ---> parent and child
+
+//this---representing current class object
+
+//super---parent class object
+
+//this()----->default constructor for current class
+//supre()----->using the parent class constrcuctor
