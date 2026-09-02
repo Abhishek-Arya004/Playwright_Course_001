@@ -22,12 +22,12 @@ test("test", async ({ page }) => {
   await page.getByRole("checkbox", { name: "Thursday" }).check();
   await page.getByRole("checkbox", { name: "Friday" }).check();
   await page.getByRole("checkbox", { name: "Saturday" }).check();
-  selectOption("japan");
+  await page.getByLabel("Country:").selectOption("india");
   await page.getByLabel("Colors:").selectOption("red");
   await page.getByLabel("Sorted List:").selectOption("lion");
   await page.locator("#datepicker").click();
   await page
-    .locator("#ui-datepicker-div")
+    .locator("#ui-datepicker-div") 
     .getByRole("link", { name: "2", exact: true })
     .click();
   await page.locator("#txtDate").click();
@@ -39,14 +39,14 @@ test("test", async ({ page }) => {
     .getByRole("button", { name: "Submit" })
     .click();
   await page.getByText("You selected a range of 5").click();
-  await page.locator("#singleFileInput").click();
+  //await page.locator("#singleFileInput").click();
   await page.locator("#singleFileInput").setInputFiles("API Testing.pdf");
   await page.locator("#multipleFilesInput").click();
   await page
     .locator("#multipleFilesInput")
     .setInputFiles("Part-2 of TestNG Scenario based Questions.pdf");
   await page.locator("#multipleFilesInput").click();
-  await page.locator("#multipleFilesInput").setInputFiles("API Testing.pdf");
+  await page.locator("#multipleFilesInput").setInputFiles("C://user/API Testing.pdf" , "C://user/API Testing.pdf" );
   await page.getByRole("button", { name: "Upload Multiple Files" }).click();
   await page.locator("#multipleFilesInput").click();
   await page

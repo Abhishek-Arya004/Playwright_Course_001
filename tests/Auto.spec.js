@@ -4,8 +4,17 @@ test("Fill the form", async ({ page }) => {
   await page.goto("https://testautomationpractice.blogspot.com/");
   //await page.getByRole("textbox", { name: "First Name" }).fill("Abhishek");
   await page.getByPlaceholder("Enter Name").fill("Abhishek");
+
+  await expect(page.getByPlaceholder("Enter Name")).toHaveValue("Abhishek");
+
   await page.getByPlaceholder("Enter EMail").fill("test@gmail.com");
+
   await page.getByRole("radio", { name: "Male", exact: true }).check();
+  await expect(page.getByRole("radio", { name: "Male", exact: true })).toBeChecked();
+  
+  await page.getByRole("checkbox", { name: "Cricket" }).check();
+  
+  await expect(page.getByRole("checkbox", { name: "Cricket" })).toBeChecked();
 
   //textcontent
   // const textval = await page
@@ -76,4 +85,6 @@ test("Fill the form", async ({ page }) => {
   // ,<a> , <p> , <h1> , <h2> , <h3> , <h4> , <h5> , <h6> , <span> , <div>
   // const innerhtmlval = await page.locator("h1").innerText();
   // console.log(innerhtmlval);
+
+  #rows > tr:nth-child(1) > td:nth-child(5)
 });
