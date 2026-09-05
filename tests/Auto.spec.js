@@ -80,7 +80,20 @@ test("Fill the form", async ({ page }) => {
 
   //console.log(innerhtmlval1);
 
-  await page.waitForTimeout(5000);
+  import { test, expect } from "@playwright/test";
+
+test("Keyboard actions", async ({ page }) => {
+
+  await page.goto("https://demoqa.com/text-box");
+
+  const name = page.getByPlaceholder("Full Name");
+
+  await name.fill("Abhishek");
+
+  await name.press("Tab");
+
+});
+
 
   // ,<a> , <p> , <h1> , <h2> , <h3> , <h4> , <h5> , <h6> , <span> , <div>
   // const innerhtmlval = await page.locator("h1").innerText();
