@@ -10,10 +10,12 @@ test("Fill the form", async ({ page }) => {
   await page.getByPlaceholder("Enter EMail").fill("test@gmail.com");
 
   await page.getByRole("radio", { name: "Male", exact: true }).check();
-  await expect(page.getByRole("radio", { name: "Male", exact: true })).toBeChecked();
-  
+  await expect(
+    page.getByRole("radio", { name: "Male", exact: true }),
+  ).toBeChecked();
+
   await page.getByRole("checkbox", { name: "Cricket" }).check();
-  
+
   await expect(page.getByRole("checkbox", { name: "Cricket" })).toBeChecked();
 
   //textcontent
@@ -80,24 +82,11 @@ test("Fill the form", async ({ page }) => {
 
   //console.log(innerhtmlval1);
 
-  import { test, expect } from "@playwright/test";
-
-test("Keyboard actions", async ({ page }) => {
-
-  await page.goto("https://demoqa.com/text-box");
-
-  const name = page.getByPlaceholder("Full Name");
-
-  await name.fill("Abhishek");
-
-  await name.press("Tab");
-
-});
-
+  await page.waitForTimeout(5000);
 
   // ,<a> , <p> , <h1> , <h2> , <h3> , <h4> , <h5> , <h6> , <span> , <div>
   // const innerhtmlval = await page.locator("h1").innerText();
   // console.log(innerhtmlval);
 
-  #rows > tr:nth-child(1) > td:nth-child(5)
+  //#rows > tr:nth-child(1) > td:nth-child(5)
 });

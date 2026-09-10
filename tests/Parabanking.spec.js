@@ -39,6 +39,8 @@ import { test, expect } from "@playwright/test";
 //arya90
 //123456
 
+//Hooks
+
 test("Verify Login of parabank", async ({ page }) => {
   await page.goto("https://parabank.parasoft.com/parabank/index.htm");
 

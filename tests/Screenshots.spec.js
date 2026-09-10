@@ -67,6 +67,7 @@ test.only("Verify Successful Login", async ({ page }) => {
   });
 
   console.log(formatter.format(timestamp));
+  console.log("this is test message 1");
 
   //   await page.screenshot({
   //     path: `screenshots/dashboard-${formatter.format(timestamp)}.jpg`,
