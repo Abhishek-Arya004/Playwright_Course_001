@@ -19,9 +19,9 @@ export class Login_Page {
     await this.page.goto(url);
   }
 
-  async navigateTopage(url) {
-    await this.page.goto(url);
-  }
+  // async navigateTopage(url) {
+  //   await this.page.goto(url);
+  // }
 
   async clicksubmit() {
     await this.submit.click();
