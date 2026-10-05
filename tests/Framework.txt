@@ -1,0 +1,21 @@
+
+Playwrite workplace
+|
+|-----------tests
+             |--------login.spec.js,myinfor.spec.js
+|
+|------------PageObjects
+|            |-----------Login_page.js , Myinfo.js
+|
+|-------------Fixture
+|            |----------testFixture.js
+|
+|------------Utils
+|            |----------CommonUtils.js, testData.js, apiUtils.js
+|
+|
+|------------Test-testData
+|            |----------login.js ,myinfo.js,commondata.js
+|
+|
+|-------------Playwritrconfig.js
